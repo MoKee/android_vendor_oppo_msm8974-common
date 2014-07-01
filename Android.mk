@@ -16,7 +16,6 @@
 
 ifeq ($(BOARD_VENDOR),oppo)
 ifeq ($(TARGET_BOARD_PLATFORM),msm8974)
-ifneq ($(TARGET_DEVICE),find7a)
 ifeq ($(QCPATH),)
 
 LOCAL_PATH := $(call my-dir)
@@ -111,7 +110,6 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_CERTIFICATE := platform
 include $(BUILD_PREBUILT)
 
-endif
 endif
 endif
 endif
