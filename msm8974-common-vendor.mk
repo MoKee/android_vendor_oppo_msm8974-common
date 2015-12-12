@@ -19,25 +19,29 @@ DEVICE_PACKAGE_OVERLAYS += vendor/oppo/msm8974-common/overlay
 
 PRODUCT_PACKAGES += \
     com.qualcomm.location \
-    PPPreference \
-    QuickBoot \
     qcrilmsgtunnel \
     shutdownlistener
 
 PRODUCT_PACKAGES += \
-    libHevcSwDecoder \
-    libmm-abl \
     libtime_genoff \
     libTimeService \
     TimeService
-
-PRODUCT_PACKAGES += \
-    libscale \
 
 PRODUCT_PACKAGES += \
     libwvdrmengine \
     libwvdrm_L3 \
     libwvm \
     libWVStreamControlAPI_L3
+
+PRODUCT_PACKAGES += \
+    libqmi \
+    libmdmdetect \
+    libqmiservices \
+    libidl \
+    libqcci_legacy \
+    libdiag \
+    libqmi_client_qmux \
+    libdsutils \
+    libwpa_qmi_eap_proxy
 
 $(call inherit-product, vendor/oppo/msm8974-common/msm8974-common-vendor-blobs.mk)
